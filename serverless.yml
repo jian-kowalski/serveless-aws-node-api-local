@@ -10,13 +10,32 @@ provider:
   memorySize: 256
 
 functions:
-  create:
-    handler: src/Books.create
+  createBook:
+    handler: src/Books.createBook
     events:
       - http:
           path: books
           method: post
+  listBooks:
+    handler: src/Books.listBooks
+    events:
+      - http:
+          path: books
+          method: get
+  listBook:
+    handler: src/Books.listBook
+    events:
+      - http:
+          path: books/{id}
+          method: get
+          
+
 
 plugins:
   - serverless-offline
   - serverless-plugin-typescript
+
+package:
+  excludeDevDependencies: true
+  include:
+    src/**!(*spec).js
