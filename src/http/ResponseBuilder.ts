@@ -2,7 +2,6 @@ import { ApiCallback } from "../interfaces/ApiHandlerInterfaces";
 import { ApiResponse } from "../interfaces/ApiResponseInterfaces";
 
 export class ResponseBuilder {
-
   public static jsonResponse(
     body,
     statusCode: number,
@@ -30,7 +29,7 @@ export class ResponseBuilder {
   }
 
   private static buildBody(contents) {
-    return JSON.stringify(contents);
+    return  contents !== "" ? JSON.stringify(contents): "";
   }
 
   private static getHeaders() {

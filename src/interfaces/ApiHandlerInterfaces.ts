@@ -1,8 +1,4 @@
-import {
-    APIGatewayEvent,
-    Context,
-    ProxyCallback,
-} from "aws-lambda";  // tslint:disable-line no-implicit-dependencies
+import { APIGatewayEvent, Context, ProxyCallback } from "aws-lambda"; // tslint:disable-line no-implicit-dependencies
 import { ApiResponse } from "./ApiResponseInterfaces";
 
 /**
@@ -20,8 +16,15 @@ export type ApiEvent = APIGatewayEvent;
 /**
  * @type ApiHandler provide api request handler signature
  */
-export type ApiHandler = (event: APIGatewayEvent, context: Context, callback: ApiCallback) => void;
+export type ApiHandler = (
+  event: APIGatewayEvent,
+  context: Context,
+  callback: ApiCallback
+) => void;
 /**
  * @type ApiPromiseHandler provide async api request handler signature
  */
-export type ApiPromiseHandler = (event: APIGatewayEvent, context: ApiContext) => Promise<ApiResponse>;
+export type ApiPromiseHandler = (
+  event: APIGatewayEvent,
+  context: ApiContext
+) => Promise<ApiResponse>;

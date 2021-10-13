@@ -1,4 +1,4 @@
-import { ProxyResult } from "aws-lambda";  // tslint:disable-line no-implicit-dependencies
+import { ProxyResult } from "aws-lambda"; 
 
 /**
  * @type ApiResponse Overwrite AWS-Lambda ProxyResult

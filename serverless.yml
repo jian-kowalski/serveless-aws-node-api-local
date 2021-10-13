@@ -1,6 +1,6 @@
 service: serveless-aws-node-api-local
 
-frameworkVersion: '2'
+frameworkVersion: "2"
 
 provider:
   name: aws
@@ -28,8 +28,12 @@ functions:
       - http:
           path: books/{id}
           method: get
-          
-
+  deleteBook:
+    handler: src/Books.deleteBook
+    events:
+      - http:
+          path: books/{id}
+          method: delete
 
 plugins:
   - serverless-offline
@@ -37,5 +41,4 @@ plugins:
 
 package:
   excludeDevDependencies: true
-  include:
-    src/**!(*spec).js
+  include: src/**!(*spec).js

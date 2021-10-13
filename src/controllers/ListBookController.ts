@@ -12,10 +12,10 @@ class ListBookController {
     event: ApiEvent,
     context: ApiContext
   ): Promise<ApiResponse> => {
-    const id:string = event.pathParameters["id"];
+    const id: string = event.pathParameters["id"];
 
     const listUserService = new ListBookService();
-    const book = await listUserService.getList(id);
+    const book = await listUserService.getBook(id);
 
     return <ApiResponse>ResponseBuilder.jsonResponse(book, HTTP_OK);
   };

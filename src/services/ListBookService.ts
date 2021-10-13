@@ -1,7 +1,7 @@
 import { getBookRepository } from "../database/Database";
 
 class ListBookService {
-  async getList(id: string) {
+  async getBook(id: string) {
     return (await getBookRepository()).findOne(id);
   }
 }
