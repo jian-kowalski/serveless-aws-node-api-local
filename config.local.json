@@ -1,0 +1,7 @@
+{
+    "dbHost": "db_book",
+    "dataBase": "books",
+    "dbPort": 3306,
+    "userName": "root",
+    "dbPassword": "root"
+}

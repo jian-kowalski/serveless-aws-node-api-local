@@ -4,6 +4,7 @@
   "description": "Exemplo de API serverless com typecript e execuçao local",
   "main": "src/book.handler.ts",
   "scripts": {
+    "start:local": "serverless offline --stage local"
   },
   "author": "jian-kowalski",
   "license": "ISC",
@@ -16,10 +17,9 @@
   "dependencies": {
     "@types/aws-lambda": "^8.10.84",
     "@types/node": "^16.10.4",
-    "@types/uuid": "^8.3.1",
     "aws-lambda": "^1.0.6",
+    "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
-    "sqlite3": "^5.0.2",
     "ts-node": "^10.3.0",
     "typeorm": "^0.2.38",
     "uuid": "^8.3.2"

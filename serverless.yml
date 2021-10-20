@@ -4,10 +4,17 @@ frameworkVersion: "2"
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   lambdaHashingVersion: 20201221
   region: sa-east-1
   memorySize: 256
+  stage: ${opt:stage, 'local'}
+  environment:
+    DB_HOST: ${file(./config.${opt:stage, 'dev'}.json):dbHost}
+    DB_DATABASE: ${file(./config.${opt:stage, 'dev'}.json):dataBase}
+    DB_PORT: ${file(./config.${opt:stage, 'dev'}.json):dbPort}
+    DB_USERNAME: ${file(./config.${opt:stage, 'dev'}.json):userName}
+    DB_PASSWORD: ${file(./config.${opt:stage, 'dev'}.json):dbPassword}
 
 functions:
   createBook:
@@ -42,3 +49,7 @@ plugins:
 package:
   excludeDevDependencies: true
   include: src/**!(*spec).js
+
+custom:
+  serverless-offline:
+    host: 0.0.0.0
