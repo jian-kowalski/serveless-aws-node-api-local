@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "2af57c96-bbb9-48cc-a3f3-bef296203ba1",
+		"name": "Serverless-Books",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nossa vida\",\n    \"date_release\": \"12/10/2021\",\n    \"author\": \"Paulo Lebre\",\n    \"category\": \"Auto ajuda\",\n    \"amount\": 40.00,\n    \"page_number\": 120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nossa vida\",\n    \"date_release\": \"12/10/2021\",\n    \"author\": \"Paulo Lebre\",\n    \"category\": \"Auto ajuda\",\n    \"amount\": 40.00,\n    \"page_number\": 120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar book",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nossa vida\",\n    \"date_release\": \"12/10/2021\",\n    \"author\": \"Paulo Lebre\",\n    \"category\": \"Auto ajuda\",\n    \"amount\": 40.00,\n    \"page_number\": 120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nossa vida\",\n    \"date_release\": \"12/10/2021\",\n    \"author\": \"Paulo Lebre\",\n    \"category\": \"Auto ajuda\",\n    \"amount\": 40.00,\n    \"page_number\": 120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dev/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dev",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
