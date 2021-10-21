@@ -20,14 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/dev/books",
+					"raw": "http://localhost:3000/local/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"dev",
+						"local",
 						"books"
 					]
 				}
@@ -35,7 +35,7 @@
 			"response": []
 		},
 		{
-			"name": "Listar books",
+			"name": "List books",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -52,14 +52,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/dev/books",
+					"raw": "http://localhost:3000/local/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"dev",
+						"local",
 						"books"
 					]
 				}
@@ -67,7 +67,7 @@
 			"response": []
 		},
 		{
-			"name": "Listar book",
+			"name": "List book",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -84,14 +84,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/dev/books",
+					"raw": "http://localhost:3000/local/books",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"dev",
+						"local",
 						"books"
 					]
 				}
@@ -113,15 +113,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/dev/books",
+					"raw": "http://localhost:3000/local/books/d4fc63ba-5d76-45ef-b507-fb32968df495",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"dev",
-						"books"
+						"local",
+						"books",
+						"d4fc63ba-5d76-45ef-b507-fb32968df495"
 					]
 				}
 			},
